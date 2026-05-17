@@ -12,7 +12,7 @@
       name="keywords"
       content="Sarko's Barbershop Nürnberg, Herrenfriseur Nürnberg, Barbershop Nürnberg, Bartstyling Nürnberg, Haarschnitt Nürnberg, Bayreuther Straße 13a"
     />
-    <meta name="theme-color" content="#120d0a" />
+    <meta name="theme-color" content="#2a0e0e" />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://cloudyclawai.github.io/sarkos-barbershop-redesign/" />
 
@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -70,179 +70,302 @@
       }
     </script>
   </head>
-  <body>
+  <body class="de">
     <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 
     <div class="site-shell">
-      <header class="hero">
+      <header class="hero page-shell">
+        <div class="hero-topline mono">
+          <span>№ 01 / NÜRNBERG</span>
+          <span>BARBER / BARBERSHOP</span>
+          <span>10:00–20:00 · MO–SA</span>
+        </div>
+
         <nav class="topbar" aria-label="Hauptnavigation">
           <div class="brand-lockup">
-            <span class="brand-kicker">Sarko's</span>
-            <span class="brand-name">Barbershop Nürnberg</span>
+            <span class="brand-kicker mono">SARKO'S</span>
+            <span class="brand-name mono">BARBERSHOP NÜRNBERG</span>
           </div>
           <div class="topbar-actions">
-            <a href="tel:+4991198931666" class="nav-link">+49 911 98931666</a>
+            <a href="tel:+4991198931666" class="btn btn-outline mono">+49 911 98931666 <span aria-hidden="true">→</span></a>
             <a
               href="https://www.google.de/maps/search/%20Sarko's%20Barbershop%20N%C3%BCrnberg%20Bayreuther%20Str.%2013a,%2090409%20N%C3%BCrnberg,%20DE"
-              class="nav-button"
+              class="btn btn-solid mono"
               target="_blank"
               rel="noreferrer"
-              >Wegbeschreibung</a
+              >WEGBESCHREIBUNG <span aria-hidden="true">↗</span></a
             >
           </div>
         </nav>
 
-        <div class="hero-grid">
+        <div class="hero-layout">
           <section class="hero-copy" aria-labelledby="hero-title">
-            <p class="eyebrow">Barber / Barbershop</p>
-            <h1 id="hero-title">Sarko's Barbershop Nürnberg</h1>
-            <p class="lede">
+            <div class="hero-heading-block">
+              <p class="section-kicker mono">SARKO'S · HERRENFRISEUR · NÜRNBERG</p>
+              <h1 id="hero-title">SARKO'S BARBERSHOP NÜRNBERG</h1>
+            </div>
+
+            <p class="lede serif">
               Sarko's Barbershop Nürnberg ist ein Herrenfriseursalon, der moderne und klassische Haarschnitte sowie Bartstyling und
               Körperpflegedienste anbietet.
             </p>
+
+            <div class="hero-meta-grid">
+              <div>
+                <p class="meta-label mono">KATEGORIE</p>
+                <p class="meta-value serif">Barber / Barbershop</p>
+              </div>
+              <div>
+                <p class="meta-label mono">TERMIN</p>
+                <p class="meta-value serif">Unter der Nummer +4991198931666 können Sie einen Termin beim Herrenfriseur Sarko's Barbershop Nürnberg vereinbaren.</p>
+              </div>
+              <div>
+                <p class="meta-label mono">ADRESSE</p>
+                <p class="meta-value serif">Bayreuther Str. 13a, 90409 Nürnberg, DE</p>
+              </div>
+            </div>
+
             <div class="hero-actions">
-              <a class="primary-cta" href="tel:+4991198931666">Termin vereinbaren</a>
+              <a class="btn btn-solid mono" href="tel:+4991198931666">TERMIN VEREINBAREN <span aria-hidden="true">→</span></a>
               <a
-                class="secondary-cta"
+                class="btn btn-outline mono"
                 href="https://www.google.de/maps/search/%20Sarko's%20Barbershop%20N%C3%BCrnberg%20Bayreuther%20Str.%2013a,%2090409%20N%C3%BCrnberg,%20DE"
                 target="_blank"
                 rel="noreferrer"
-                >Wegbeschreibung – Routenplaner – Fahrtzeit – BewertungAdres</a
+                >WEGBESCHREIBUNG – ROUTENPLANER – FAHRTZEIT – BEWERTUNGADRES <span aria-hidden="true">↗</span></a
               >
             </div>
-            <ul class="hero-points" aria-label="Leistungsschwerpunkte">
-              <li>Moderne Haarschnitte</li>
-              <li>Klassische Haarschnitte</li>
-              <li>Bartstyling & Körperpflegedienste</li>
-            </ul>
           </section>
 
           <aside class="hero-card" aria-label="Kontaktdaten und Adresse">
-            <div class="card-accent" aria-hidden="true"></div>
-            <p class="card-label">Adresse</p>
-            <h2>Bayreuther Str. 13a</h2>
-            <p class="card-subtle">90409 Nürnberg, DE</p>
+            <div class="stamp" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="presentation">
+                <circle cx="60" cy="60" r="53" class="stamp-ring"></circle>
+                <circle cx="60" cy="60" r="43" class="stamp-ring inner"></circle>
+                <text x="60" y="52" text-anchor="middle">NBG</text>
+                <text x="60" y="70" text-anchor="middle">2026</text>
+              </svg>
+            </div>
+            <p class="section-kicker mono">BAYREUTHER STR. 13A</p>
+            <h2>90409<br />NÜRNBERG</h2>
             <dl class="fact-list">
               <div>
-                <dt>Telefon</dt>
-                <dd><a href="tel:+4991198931666">+49 911 98931666</a></dd>
+                <dt class="mono">TELEFON</dt>
+                <dd class="serif"><a href="tel:+4991198931666">+49 911 98931666</a></dd>
               </div>
               <div>
-                <dt>Kategorie</dt>
-                <dd>Barber / Barbershop</dd>
+                <dt class="mono">ÖFFNUNG</dt>
+                <dd class="serif">Montag bis Samstag · 10:00–20:00</dd>
               </div>
               <div>
-                <dt>Termin</dt>
-                <dd>Unter der Nummer +4991198931666 können Sie einen Termin beim Herrenfriseur Sarko's Barbershop Nürnberg vereinbaren.</dd>
+                <dt class="mono">SONNTAG</dt>
+                <dd class="serif">Closed</dd>
               </div>
             </dl>
           </aside>
         </div>
+
+        <div class="hero-engraving" aria-hidden="true">
+          <svg viewBox="0 0 420 420" role="presentation">
+            <g class="razor-mark">
+              <path d="M120 250c42-12 78-44 108-96 12-20 28-44 56-69l18 18c-24 28-41 52-51 72-29 58-73 99-126 121-10 5-22 7-30 0-8-8-4-34 25-46z"></path>
+              <path d="M286 86l24-24 48 48-24 24z"></path>
+              <path d="M145 266c18 2 30 16 31 34"></path>
+              <path d="M152 280c8 1 14 7 15 15"></path>
+            </g>
+          </svg>
+        </div>
       </header>
 
-      <main id="main-content">
-        <section class="section split" id="visit">
-          <div class="hours-panel" aria-labelledby="hours-title">
-            <p class="eyebrow">Wegbeschreibung und Öffnungszeiten</p>
-            <h2 id="hours-title">Öffnungszeiten</h2>
-            <ul class="hours-list">
-              <li><span>Montag</span><strong>10:00–20:00</strong></li>
-              <li><span>Dienstag</span><strong>10:00–20:00</strong></li>
-              <li><span>Mittwoch</span><strong>10:00–20:00</strong></li>
-              <li><span>Donnerstag</span><strong>10:00–20:00</strong></li>
-              <li><span>Freitag</span><strong>10:00–20:00</strong></li>
-              <li><span>Samstag</span><strong>10:00–20:00</strong></li>
-              <li><span>Sonntag</span><strong>Closed</strong></li>
-            </ul>
-          </div>
+      <section class="ticker-band" aria-label="Laufband mit Shop-Infos">
+        <div class="ticker-track mono">
+          <span>SARKO'S BARBERSHOP NÜRNBERG</span>
+          <span>●</span>
+          <span>MODERNE HAARSCHNITTE</span>
+          <span>●</span>
+          <span>KLASSISCHE HAARSCHNITTE</span>
+          <span>●</span>
+          <span>BARTSTYLING</span>
+          <span>●</span>
+          <span>KÖRPERPFLEGEDIENSTE</span>
+          <span>●</span>
+          <span>BAYREUTHER STR. 13A · 90409 NÜRNBERG</span>
+          <span>●</span>
+          <span>+49 911 98931666</span>
+          <span>●</span>
+          <span>SARKO'S BARBERSHOP NÜRNBERG</span>
+          <span>●</span>
+          <span>MODERNE HAARSCHNITTE</span>
+          <span>●</span>
+          <span>KLASSISCHE HAARSCHNITTE</span>
+          <span>●</span>
+          <span>BARTSTYLING</span>
+          <span>●</span>
+          <span>KÖRPERPFLEGEDIENSTE</span>
+          <span>●</span>
+          <span>BAYREUTHER STR. 13A · 90409 NÜRNBERG</span>
+          <span>●</span>
+          <span>+49 911 98931666</span>
+        </div>
+      </section>
 
-          <div class="visit-panel">
-            <p class="eyebrow">Anfahrt</p>
-            <h2>Bayreuther Str. 13a, 90409 Nürnberg</h2>
-            <p>
+      <main id="main-content" class="page-shell">
+        <section class="section-head">
+          <div class="section-head-top mono">
+            <span>№ 02 / WEGBESCHREIBUNG</span>
+            <span>ÖFFNUNGSZEITEN ★★★★★</span>
+          </div>
+          <div class="section-rule"></div>
+          <h2>ÖFFNUNGSZEITEN.</h2>
+        </section>
+
+        <section class="visit-layout">
+          <div class="visit-info">
+            <p class="serif visit-copy">
               Unter der Nummer +4991198931666 können Sie einen Termin beim Herrenfriseur Sarko's Barbershop Nürnberg vereinbaren.
             </p>
             <div class="visit-actions">
-              <a class="primary-cta" href="tel:+4991198931666">Jetzt anrufen</a>
+              <a class="btn btn-solid mono" href="tel:+4991198931666">JETZT ANRUFEN <span aria-hidden="true">→</span></a>
               <a
-                class="secondary-cta"
+                class="btn btn-outline mono"
                 href="https://www.google.de/maps/search/%20Sarko's%20Barbershop%20N%C3%BCrnberg%20Bayreuther%20Str.%2013a,%2090409%20N%C3%BCrnberg,%20DE"
                 target="_blank"
                 rel="noreferrer"
-                >Wegbeschreibung – Routenplaner – Fahrtzeit – BewertungAdres</a
+                >ROUTENPLANER <span aria-hidden="true">↗</span></a
               >
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <div class="hours-grid">
+              <article class="day today">
+                <span class="pill mono"><span class="live-dot"></span>HEUTE</span>
+                <strong class="day-name">MO</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day">
+                <strong class="day-name">DI</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day">
+                <strong class="day-name">MI</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day">
+                <strong class="day-name">DO</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day">
+                <strong class="day-name">FR</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day">
+                <strong class="day-name">SA</strong>
+                <span class="day-hours serif">10:00–20:00</span>
+              </article>
+              <article class="day closed">
+                <strong class="day-name">SO</strong>
+                <span class="day-hours serif">Closed</span>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="section rating-band" aria-label="Bewertung">
-          <p class="stars" aria-label="Fünf Sterne Bewertung">⭐⭐⭐⭐⭐</p>
+        <section class="section-head">
+          <div class="section-head-top mono">
+            <span>№ 03 / LEISTUNGEN</span>
+            <span>GROOMING & PFLEGE</span>
+          </div>
+          <div class="section-rule"></div>
+          <h2>DIE SCHNITTLISTE.</h2>
         </section>
 
-        <section class="section services" aria-labelledby="services-title">
-          <div class="section-heading">
-            <p class="eyebrow">Leistungen</p>
-            <h2 id="services-title">Grooming & Pflege</h2>
-          </div>
-          <div class="service-grid">
-            <article class="service-card">
-              <h3>Haarschnitte</h3>
-              <p>Moderne und klassische Haarschnitte gehören zum Angebot von Sarko's Barbershop Nürnberg.</p>
-            </article>
-            <article class="service-card">
-              <h3>Bartdesign</h3>
-              <p>Bartstyling und Bartdesign werden mit Präzision und professioneller Sorgfalt durchgeführt.</p>
-            </article>
-            <article class="service-card">
-              <h3>Körperpflege</h3>
-              <p>Zusätzliche Dienstleistungen wie Hautpflege und Maniküre ergänzen das Angebot als komplettes Pflegezentrum für Männer.</p>
-            </article>
-          </div>
+        <section class="services-table" aria-labelledby="services-title">
+          <h3 id="services-title" class="visually-hidden">Leistungen</h3>
+          <article class="service-row">
+            <span class="service-num">01</span>
+            <h4 class="service-name serif">Haarschnitte</h4>
+            <p class="service-desc">Moderne und klassische Haarschnitte gehören zum Angebot von Sarko's Barbershop Nürnberg.</p>
+            <span class="service-time mono">MO–SA</span>
+            <span class="service-price">10<span class="euro">–</span></span>
+          </article>
+          <article class="service-row">
+            <span class="service-num">02</span>
+            <h4 class="service-name serif">Bartdesign</h4>
+            <p class="service-desc">Bartstyling und Bartdesign werden mit Präzision und professioneller Sorgfalt durchgeführt.</p>
+            <span class="service-time mono">PROFI</span>
+            <span class="service-price">02<span class="euro">•</span></span>
+          </article>
+          <article class="service-row">
+            <span class="service-num">03</span>
+            <h4 class="service-name serif">Körperpflege</h4>
+            <p class="service-desc">Zusätzliche Dienstleistungen wie Hautpflege und Maniküre ergänzen das Angebot als komplettes Pflegezentrum für Männer.</p>
+            <span class="service-time mono">EXTRA</span>
+            <span class="service-price">03<span class="euro">•</span></span>
+          </article>
         </section>
 
-        <section class="section testimonials" aria-labelledby="testimonials-title">
-          <div class="section-heading">
-            <p class="eyebrow">Kundenstimmen</p>
-            <h2 id="testimonials-title">Sarko's Barbershop Nürnberg</h2>
+        <section class="section-head">
+          <div class="section-head-top mono">
+            <span>№ 04 / BEWERTUNG</span>
+            <span>⭐⭐⭐⭐⭐</span>
           </div>
-          <div class="testimonial-grid">
-            <figure class="quote-card">
-              <blockquote>
-                Ich war das erste Mal beim „Sarko's Barbershop Nürnberg“ und war total zufrieden. Mein Haarschnitt ist genau so geworden,
-                wie ich es wollte. Die Mitarbeiter sind sehr fürsorglich und professionell.
-              </blockquote>
-              <figcaption>Erster Besuch</figcaption>
-            </figure>
-            <figure class="quote-card">
-              <blockquote>
-                Wenn es um Bartdesign geht, kann ich „Sarko's Barbershop Nürnberg“ nur empfehlen. Ich war schon an vielen Orten, aber ich
-                habe noch nie einen gesehen, der es so gut macht wie dieser.
-              </blockquote>
-              <figcaption>Bartdesign</figcaption>
-            </figure>
-            <figure class="quote-card">
-              <blockquote>
-                Im „Sarko's Barbershop Nürnberg“ erhalten Sie neben Haarschnitten auch Dienstleistungen wie Hautpflege und Maniküre. Ein
-                komplettes Körperpflegezentrum für Männer.
-              </blockquote>
-              <figcaption>Pflegeangebot</figcaption>
-            </figure>
-            <figure class="quote-card">
-              <blockquote>
-                Die Atmosphäre im „Sarko's Barbershop Nürnberg“ ist sehr entspannt und modern. Sie fühlen sich wie ein VIP.
-              </blockquote>
-              <figcaption>Atmosphäre</figcaption>
-            </figure>
-          </div>
+          <div class="section-rule"></div>
+          <h2>STIMMEN.</h2>
+        </section>
+
+        <section class="quotes-grid">
+          <figure class="quote-card brutal">
+            <blockquote class="serif">
+              Ich war das erste Mal beim „Sarko's Barbershop Nürnberg“ und war total zufrieden. Mein Haarschnitt ist genau so geworden,
+              wie ich es wollte. Die Mitarbeiter sind sehr fürsorglich und professionell.
+            </blockquote>
+            <figcaption class="mono">ERSTER BESUCH</figcaption>
+          </figure>
+          <figure class="quote-card brutal">
+            <blockquote class="serif">
+              Wenn es um Bartdesign geht, kann ich „Sarko's Barbershop Nürnberg“ nur empfehlen. Ich war schon an vielen Orten, aber ich
+              habe noch nie einen gesehen, der es so gut macht wie dieser.
+            </blockquote>
+            <figcaption class="mono">BARTDESIGN</figcaption>
+          </figure>
+          <figure class="quote-card brutal">
+            <blockquote class="serif">
+              Im „Sarko's Barbershop Nürnberg“ erhalten Sie neben Haarschnitten auch Dienstleistungen wie Hautpflege und Maniküre. Ein
+              komplettes Körperpflegezentrum für Männer.
+            </blockquote>
+            <figcaption class="mono">PFLEGEANGEBOT</figcaption>
+          </figure>
+          <figure class="quote-card brutal">
+            <blockquote class="serif">
+              Die Atmosphäre im „Sarko's Barbershop Nürnberg“ ist sehr entspannt und modern. Sie fühlen sich wie ein VIP.
+            </blockquote>
+            <figcaption class="mono">ATMOSPHÄRE</figcaption>
+          </figure>
         </section>
       </main>
 
-      <footer class="footer">
-        <p>Sarko's Barbershop Nürnberg</p>
-        <p class="footer-note">Bayreuther Str. 13a · 90409 Nürnberg · +49 911 98931666</p>
-        <div class="footer-links">
-          <a href="mailto:info@ebvv.com">info@ebvv.com</a>
-          <a href="https://www.instagram.com/ebvvcom/" target="_blank" rel="noreferrer">https://www.instagram.com/ebvvcom/</a>
+      <footer class="footer page-shell">
+        <div class="section-head-top mono footer-head">
+          <span>№ 05 / KONTAKT</span>
+          <span>INFO & SOCIAL</span>
+        </div>
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">SARKO'S BARBERSHOP NÜRNBERG</p>
+            <p class="serif footer-copy">Bayreuther Str. 13a<br />90409 Nürnberg<br />+49 911 98931666</p>
+          </div>
+          <div>
+            <p class="footer-title">ÖFFNUNGSZEITEN</p>
+            <p class="serif footer-copy">Montag bis Samstag<br />10:00–20:00<br />Sonntag Closed</p>
+          </div>
+          <div>
+            <p class="footer-title">VERBINDUNGEN</p>
+            <div class="footer-links mono">
+              <a href="mailto:info@ebvv.com">INFO@EBVV.COM</a>
+              <a href="https://www.instagram.com/ebvvcom/" target="_blank" rel="noreferrer">INSTAGRAM / EBVVCOM</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
