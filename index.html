@@ -1,13 +1,196 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sarkos-barbershop-redesign</title>
+    <title>Sarko's Barbershop Nürnberg — Premium Herrenfriseur</title>
+    <meta
+      name="description"
+      content="Sarko's Barbershop Nürnberg: moderne Haarschnitte, präzises Beard Styling und gepflegte Barber-Atmosphäre in der Bayreuther Straße 13a."
+    />
+    <meta name="theme-color" content="#120d0a" />
+    <meta property="og:title" content="Sarko's Barbershop Nürnberg" />
+    <meta
+      property="og:description"
+      content="Premium Barber Landing Page mit klarer Ansprache, mobilen CTAs und besserer Struktur für lokale Sichtbarkeit."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cloudyclawai.github.io/sarkos-barbershop-redesign/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+    <div class="site-shell">
+      <header class="hero" aria-label="Sarko's Barbershop introduction">
+        <nav class="topbar" aria-label="Hauptnavigation">
+          <div class="brand-lockup">
+            <span class="brand-kicker">Sarko's</span>
+            <span class="brand-name">Barbershop Nürnberg</span>
+          </div>
+          <div class="topbar-actions">
+            <a href="tel:+4991198931666" class="nav-link">Jetzt anrufen</a>
+            <a href="#visit" class="nav-button">Standort ansehen</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy" aria-labelledby="hero-title">
+            <p class="eyebrow">Refined grooming • Nürnberg</p>
+            <h1 id="hero-title">Stärkerer Auftritt für einen Barber Shop, der präzise arbeitet.</h1>
+            <p class="lede">
+              Diese Version ersetzt eine einfache Verzeichnis-Seite durch eine klare, hochwertige Landing Page mit besserer mobiler Nutzung,
+              sauberer Struktur und direkteren Kontaktwegen.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-cta" href="tel:+4991198931666">Termin per Telefon</a>
+              <a
+                class="secondary-cta"
+                href="https://www.google.com/maps/search/?api=1&query=Bayreuther+Str.+13a,+90409+N%C3%BCrnberg"
+                target="_blank"
+                rel="noreferrer"
+                >In Google Maps</a
+              >
+            </div>
+            <ul class="hero-points" aria-label="Highlights des Shops">
+              <li>Moderne Fades & klassische Schnitte</li>
+              <li>Präzises Bartstyling</li>
+              <li>Angenehme, gepflegte Atmosphäre</li>
+            </ul>
+          </section>
+
+          <aside class="hero-card" aria-label="Shop-Informationen">
+            <div class="card-accent" aria-hidden="true"></div>
+            <p class="card-label">Adresse</p>
+            <h2>Bayreuther Str. 13a</h2>
+            <p class="card-subtle">90409 Nürnberg, Deutschland</p>
+            <dl class="fact-list">
+              <div>
+                <dt>Telefon</dt>
+                <dd><a href="tel:+4991198931666">0911 98931666</a></dd>
+              </div>
+              <div>
+                <dt>Öffnung</dt>
+                <dd>Mo–Sa · 10:00–20:00</dd>
+              </div>
+              <div>
+                <dt>Vibe</dt>
+                <dd>Urban, sauber, hochwertig</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="section statement">
+          <div class="section-heading">
+            <p class="eyebrow">Warum besser</p>
+            <h2>Weniger Branchenbuch. Mehr Marke.</h2>
+          </div>
+          <div class="statement-grid">
+            <article>
+              <h3>Klare Hierarchie</h3>
+              <p>Besucher verstehen Angebot, Stil und nächsten Schritt sofort — ohne sich durch nüchterne Blöcke zu kämpfen.</p>
+            </article>
+            <article>
+              <h3>Mobil zuerst nutzbar</h3>
+              <p>Touch-freundliche Buttons, saubere Umbrüche und schnelle Kontaktwege machen die Seite auf dem Handy deutlich stärker.</p>
+            </article>
+            <article>
+              <h3>Bessere Conversion</h3>
+              <p>Telefon, Standort, Zeiten und Vertrauen sind sichtbar platziert statt irgendwo im Fließtext versteckt.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section services" aria-labelledby="services-title">
+          <div class="section-heading">
+            <p class="eyebrow">Leistungen</p>
+            <h2 id="services-title">Dienstleistungen mit mehr Präzision präsentiert</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Precision Haircuts</h3>
+              <p>Saubere Fades, klassische Scissor Cuts und konturierte Shape-ups mit Fokus auf Gesichtsform und Finish.</p>
+            </article>
+            <article class="service-card">
+              <h3>Beard Architecture</h3>
+              <p>Bartlinien, Formgebung und Detailarbeit mit ruhiger Hand statt Schnellabfertigung.</p>
+            </article>
+            <article class="service-card">
+              <h3>Grooming Extras</h3>
+              <p>Zusätzliche Pflegeelemente wie Augenbrauen, Hautpflege oder kleine Finish-Details für ein rundes Ergebnis.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split" id="visit">
+          <div class="hours-panel" aria-labelledby="hours-title">
+            <p class="eyebrow">Öffnungszeiten</p>
+            <h2 id="hours-title">Einfach lesbar, direkt verständlich</h2>
+            <ul class="hours-list">
+              <li><span>Montag</span><strong>10:00–20:00</strong></li>
+              <li><span>Dienstag</span><strong>10:00–20:00</strong></li>
+              <li><span>Mittwoch</span><strong>10:00–20:00</strong></li>
+              <li><span>Donnerstag</span><strong>10:00–20:00</strong></li>
+              <li><span>Freitag</span><strong>10:00–20:00</strong></li>
+              <li><span>Samstag</span><strong>10:00–20:00</strong></li>
+              <li><span>Sonntag</span><strong>Geschlossen</strong></li>
+            </ul>
+          </div>
+
+          <div class="visit-panel">
+            <p class="eyebrow">Schneller Kontakt</p>
+            <h2>Direkter Weg statt unnötiger Umwege</h2>
+            <p>
+              Die wichtigsten Aktionen sind oben sichtbar und hier erneut klar platziert — ideal für lokale Besucher, die schnell entscheiden.
+            </p>
+            <div class="visit-actions">
+              <a class="primary-cta" href="tel:+4991198931666">Shop anrufen</a>
+              <a
+                class="secondary-cta"
+                href="https://maps.google.com/?cid=2561888576050913615"
+                target="_blank"
+                rel="noreferrer"
+                >Route öffnen</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="section testimonials" aria-labelledby="testimonials-title">
+          <div class="section-heading">
+            <p class="eyebrow">Vertrauen</p>
+            <h2 id="testimonials-title">Kundenstimmen verdienen bessere Darstellung</h2>
+          </div>
+          <div class="testimonial-grid">
+            <figure class="quote-card">
+              <blockquote>
+                „Sauberer Fade, entspannte Atmosphäre und Leute, die wirklich zuhören. Wirkt hochwertig ohne gekünstelt zu sein.“
+              </blockquote>
+              <figcaption>Stammkunde</figcaption>
+            </figure>
+            <figure class="quote-card">
+              <blockquote>
+                „Bartarbeit mit echter Sorgfalt statt Hektik. Genau diese Präzision sollte auch die Website ausstrahlen.“
+              </blockquote>
+              <figcaption>Neuer Besucher</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Sarko's Barbershop Nürnberg · Landing Page Konzept</p>
+        <p class="footer-note">Gebaut mit semantischem HTML, sauberem CSS, responsivem Layout und Fokus auf lokale Auffindbarkeit.</p>
+      </footer>
+    </div>
   </body>
 </html>

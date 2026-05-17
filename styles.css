@@ -1,14 +1,46 @@
-#root {
-  width: 100%;
+:root {
+  --bg: #120d0a;
+  --paper: #f6efe7;
+  --soft: #e6d5c0;
+  --muted: #c2ad98;
+  --ink: #f6efe7;
+  --accent: #d3a16d;
+  --line: rgba(255, 237, 218, 0.12);
+  --display-font: 'Cinzel', Georgia, serif;
+  --body-font: 'Manrope', 'Segoe UI', sans-serif;
 }
 
-.site-shell {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
   min-height: 100vh;
-  color: var(--ink);
   background:
     radial-gradient(circle at top left, rgba(192, 142, 92, 0.18), transparent 28%),
     radial-gradient(circle at 85% 15%, rgba(126, 42, 30, 0.22), transparent 25%),
     linear-gradient(180deg, #0f0b09 0%, #17110d 38%, #211811 100%);
+  color: var(--ink);
+  font-family: var(--body-font);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f2d1a6;
+  outline-offset: 3px;
 }
 
 .skip-link {
@@ -26,6 +58,10 @@
 
 .skip-link:focus {
   top: 1rem;
+}
+
+.site-shell {
+  min-height: 100vh;
 }
 
 .hero,
@@ -70,7 +106,6 @@
 }
 
 .brand-name {
-  font-family: var(--body-font);
   color: var(--soft);
   font-size: 0.82rem;
 }
@@ -94,7 +129,7 @@
   padding: 0.85rem 1.15rem;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   transition:
     transform 0.2s ease,
     background-color 0.2s ease,
@@ -149,9 +184,40 @@
   border-radius: 2rem;
 }
 
-.hero-copy h1 {
+h1,
+h2,
+h3 {
+  font-family: var(--display-font);
+  line-height: 0.95;
+  color: var(--paper);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
   max-width: 13ch;
   margin: 0.5rem 0 1rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  margin-bottom: 0.7rem;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  margin-bottom: 0.65rem;
+}
+
+p,
+li,
+dd,
+dt,
+figcaption,
+a,
+strong,
+span {
+  font-size: clamp(0.98rem, 1.3vw, 1.04rem);
 }
 
 .lede {
@@ -192,7 +258,13 @@
 }
 
 .card-subtle,
-.footer-note {
+.footer-note,
+.lede,
+.statement p,
+.service-card p,
+.visit-panel p,
+.hours-list span,
+blockquote {
   color: var(--muted);
 }
 
@@ -279,6 +351,12 @@
   border-bottom: 0;
 }
 
+.hours-list strong,
+blockquote,
+figcaption {
+  color: var(--paper);
+}
+
 .testimonial-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -290,7 +368,6 @@
 blockquote {
   margin: 0 0 1rem;
   font-size: 1.1rem;
-  color: var(--paper);
 }
 
 figcaption {
@@ -318,7 +395,7 @@ figcaption {
     flex-direction: column;
   }
 
-  .hero-copy h1 {
+  h1 {
     max-width: 100%;
   }
 }
