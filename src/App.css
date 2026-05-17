@@ -1,0 +1,371 @@
+#root {
+  width: 100%;
+}
+
+.site-shell {
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(192, 142, 92, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(126, 42, 30, 0.22), transparent 25%),
+    linear-gradient(180deg, #0f0b09 0%, #17110d 38%, #211811 100%);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: #f4ead7;
+  color: #1f1711;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  z-index: 100;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.hero,
+.section,
+.footer {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 1rem 0 3rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0 2rem;
+}
+
+.brand-lockup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.brand-kicker,
+.brand-name,
+.eyebrow,
+.card-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.brand-kicker,
+.eyebrow,
+.card-label {
+  font-family: var(--display-font);
+  color: var(--accent);
+  font-size: 0.78rem;
+}
+
+.brand-name {
+  font-family: var(--body-font);
+  color: var(--soft);
+  font-size: 0.82rem;
+}
+
+.topbar-actions,
+.hero-actions,
+.visit-actions {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.nav-link,
+.nav-button,
+.primary-cta,
+.secondary-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nav-link,
+.secondary-cta {
+  color: var(--paper);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-button,
+.primary-cta {
+  color: #1f140f;
+  background: linear-gradient(135deg, #c08e5c, #f2d1a6);
+  box-shadow: 0 18px 40px rgba(192, 142, 92, 0.2);
+}
+
+.nav-link:hover,
+.nav-button:hover,
+.primary-cta:hover,
+.secondary-cta:hover {
+  transform: translateY(-1px);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
+  gap: 2rem;
+  align-items: end;
+}
+
+.hero-copy,
+.hero-card,
+.service-card,
+.hours-panel,
+.visit-panel,
+.quote-card,
+.statement article {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 248, 240, 0.045);
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.22);
+}
+
+.hero-copy {
+  padding: clamp(1.5rem, 2vw, 2rem);
+  border-radius: 2rem;
+}
+
+.hero-copy h1 {
+  max-width: 13ch;
+  margin: 0.5rem 0 1rem;
+}
+
+.lede {
+  max-width: 62ch;
+  color: var(--muted);
+}
+
+.hero-points {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.hero-points li {
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--soft);
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+  border-radius: 1.75rem;
+}
+
+.card-accent {
+  position: absolute;
+  inset: auto -10% 82% 30%;
+  height: 120px;
+  background: radial-gradient(circle, rgba(242, 209, 166, 0.5), transparent 60%);
+  pointer-events: none;
+}
+
+.card-subtle,
+.footer-note {
+  color: var(--muted);
+}
+
+.fact-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+.fact-list div {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fact-list dt {
+  color: var(--accent);
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.fact-list dd,
+.fact-list a {
+  margin: 0;
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.section {
+  padding: 1rem 0 3rem;
+}
+
+.section-heading {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.statement-grid,
+.service-grid,
+.testimonial-grid,
+.split {
+  display: grid;
+  gap: 1rem;
+}
+
+.statement-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.statement article,
+.service-card,
+.hours-panel,
+.visit-panel,
+.quote-card {
+  padding: 1.35rem;
+  border-radius: 1.4rem;
+}
+
+.service-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.split {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hours-list li:last-child {
+  border-bottom: 0;
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quote-card {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--paper);
+}
+
+figcaption {
+  color: var(--accent);
+}
+
+.footer {
+  padding: 0 0 3rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+@media (max-width: 1023px) {
+  .hero-grid,
+  .statement-grid,
+  .service-grid,
+  .split,
+  .testimonial-grid,
+  .hero-points {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero,
+  .section,
+  .footer {
+    width: min(100%, calc(100% - 1rem));
+  }
+
+  .hero {
+    padding-top: 0.5rem;
+  }
+
+  .hero-copy,
+  .hero-card,
+  .statement article,
+  .service-card,
+  .hours-panel,
+  .visit-panel,
+  .quote-card {
+    padding: 1.1rem;
+    border-radius: 1.25rem;
+  }
+
+  .topbar-actions,
+  .hero-actions,
+  .visit-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-link,
+  .nav-button,
+  .primary-cta,
+  .secondary-cta {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

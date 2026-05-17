@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #120d0a;
+  --paper: #f6efe7;
+  --soft: #e6d5c0;
+  --muted: #c2ad98;
+  --ink: #f6efe7;
+  --accent: #d3a16d;
+  --line: rgba(255, 237, 218, 0.12);
+  --display-font: 'Cinzel', Georgia, serif;
+  --body-font: 'Manrope', 'Segoe UI', sans-serif;
+  font-family: var(--body-font);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f2d1a6;
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+dt {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display-font);
+  font-weight: 700;
+  line-height: 0.95;
+  color: var(--paper);
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  margin-bottom: 0.65rem;
+}
+
+p,
+li,
+dd,
+dt,
+figcaption,
+a {
+  font-size: clamp(0.98rem, 1.3vw, 1.04rem);
+}
