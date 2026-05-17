@@ -312,6 +312,18 @@ blockquote {
   gap: 1rem;
 }
 
+.rating-band {
+  padding-top: 0;
+}
+
+.stars {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.25rem;
+  color: var(--accent);
+}
+
 .statement-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -378,6 +390,17 @@ figcaption {
   padding: 0 0 3rem;
   display: grid;
   gap: 0.25rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+}
+
+.footer-links a {
+  color: var(--soft);
+  text-decoration: none;
 }
 
 @media (max-width: 1023px) {
